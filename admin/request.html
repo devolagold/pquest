@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PQuest. Hub - Request</title>
+    <link href="/src/output.css" rel="stylesheet">
+    <script defer src="/src/flowbite.js"></script>
+</head>
+<body class="bg-[#121212]">
+    <button data-drawer-target="logo-sidebar" data-drawer-toggle="logo-sidebar" aria-controls="logo-sidebar" type="button" class="inline-flex items-center py-3 m-2 ms-3 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
+        <span class="sr-only">Open sidebar</span>
+        <svg class="w-6 h-6" aria-hidden="true" fill="#fff" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <path clip-rule="evenodd" fill-rule="evenodd" d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z"></path>
+        </svg>
+        <div class="ml-4"></div>
+        <img src="/src/assets/Logo-admin.svg" class="h-8 me-3 sm:h-7" alt="Logo" />
+    </button>
+
+    <aside id="logo-sidebar" class="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full bg-white border- border-gray- sm:translate-x-0 dark:bg-gray-800 dark:border-gray-700" aria-label="Sidebar">
+        <div class="aside h-full px-3 py-4 overflow-y-auto bg-[#121212] dark:bg- border-l-1">
+            <a href="#" class="flex items-center ps-2.5 mb-5 py-2.5">
+                <img src="/src/assets/Logo-admin.svg" class="h-6 me-3 sm:h-5" alt="Logo" />
+            </a>
+            <hr class="mt-3 mb-5 opacity-20">
+            <ul class="space-y-4 font-medium">
+                <li>
+                    <a href="dashboard.html" class="flex items-center p-2 text-gray-900 rounded-md hover:bg-[#0D0D0D]">
+                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_320_70)">
+                            <path d="M18.3333 20.1668H3.66667C3.42355 20.1668 3.19039 20.0703 3.01849 19.8983C2.84658 19.7264 2.75 19.4933 2.75 19.2502V2.75016C2.75 2.50705 2.84658 2.27389 3.01849 2.10198C3.19039 1.93007 3.42355 1.8335 3.66667 1.8335H18.3333C18.5764 1.8335 18.8096 1.93007 18.9815 2.10198C19.1534 2.27389 19.25 2.50705 19.25 2.75016V19.2502C19.25 19.4933 19.1534 19.7264 18.9815 19.8983C18.8096 20.0703 18.5764 20.1668 18.3333 20.1668ZM7.33333 6.41683V8.25016H14.6667V6.41683H7.33333ZM7.33333 10.0835V11.9168H14.6667V10.0835H7.33333ZM7.33333 13.7502V15.5835H14.6667V13.7502H7.33333Z" fill="#fff"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_320_70">
+                            <rect width="22" height="22" fill="#141a14"/>
+                            </clipPath>
+                            </defs>
+                        </svg>                                                                                                                        
+                        <span class="ms-3 text-white">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="flex items-center p-2 text-white rounded-md bg-[#1463FF] ">     
+                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_320_78)">
+                            <path d="M11 20.1668C5.93726 20.1668 1.83334 16.0629 1.83334 11.0002C1.83334 5.93741 5.93726 1.8335 11 1.8335C16.0628 1.8335 20.1667 5.93741 20.1667 11.0002C20.1667 16.0629 16.0628 20.1668 11 20.1668ZM10.0833 13.7502V15.5835H11.9167V13.7502H10.0833ZM11.9167 12.2422C12.6534 12.0202 13.2858 11.541 13.6988 10.8918C14.1118 10.2426 14.2779 9.46663 14.1668 8.70526C14.0558 7.94389 13.6749 7.24773 13.0937 6.74358C12.5124 6.23943 11.7694 5.96082 11 5.9585C10.2583 5.95844 9.53945 6.2153 8.96574 6.68541C8.39202 7.15551 7.99885 7.80982 7.85309 8.53708L9.65159 8.89733C9.70263 8.64198 9.82513 8.40636 10.0048 8.21791C10.1846 8.02946 10.4141 7.89591 10.6667 7.83281C10.9194 7.76971 11.1847 7.77965 11.432 7.86147C11.6792 7.94329 11.8981 8.09363 12.0632 8.295C12.2283 8.49636 12.3328 8.74048 12.3646 8.99894C12.3964 9.25739 12.3542 9.51956 12.2428 9.75495C12.1314 9.99033 11.9555 10.1892 11.7355 10.3285C11.5155 10.4679 11.2604 10.5418 11 10.5418C10.7569 10.5418 10.5237 10.6384 10.3518 10.8103C10.1799 10.9822 10.0833 11.2154 10.0833 11.4585V12.8335H11.9167V12.2422Z" fill="white"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_320_78">
+                            <rect width="22" height="22" fill="white"/>
+                            </clipPath>
+                            </defs>
+                        </svg>                                                               
+                        <span class="ms-3">Request</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="feedback.html" class="flex items-center p-2 text-gray-900 rounded-md hover:bg-[#0D0D0D]">
+                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_320_62)">
+                            <path d="M17.0262 12.5684C17.2436 12.5656 17.4513 12.4779 17.6051 12.3242C17.7589 12.1704 17.8465 11.9627 17.8494 11.7453C17.8494 11.2888 17.4836 10.9221 17.0262 10.9221C16.5688 10.9221 16.203 11.2888 16.203 11.7453C16.203 12.2036 16.5697 12.5684 17.0262 12.5684ZM12.9699 12.5684C13.1874 12.5656 13.3951 12.4779 13.5489 12.3242C13.7026 12.1704 13.7903 11.9627 13.7931 11.7453C13.7931 11.2888 13.4264 10.9221 12.9699 10.9221C12.5116 10.9221 12.1468 11.2888 12.1468 11.7453C12.1468 12.2036 12.5125 12.5684 12.9699 12.5684ZM18.9897 17.1884C18.931 17.2211 18.8841 17.2714 18.8557 17.3324C18.8274 17.3933 18.8191 17.4616 18.832 17.5276C18.832 17.5716 18.832 17.6165 18.8549 17.6623C18.9448 18.0446 19.1244 18.6533 19.1244 18.6762C19.1244 18.7431 19.1474 18.788 19.1474 18.8338C19.1474 18.8604 19.1421 18.8867 19.1319 18.9112C19.1217 18.9357 19.1068 18.958 19.088 18.9768C19.0691 18.9955 19.0468 19.0103 19.0222 19.0204C18.9977 19.0305 18.9713 19.0356 18.9448 19.0355C18.8989 19.0355 18.8769 19.0135 18.832 18.9915L17.5038 18.2252C17.4068 18.1718 17.299 18.1411 17.1884 18.1353C17.1215 18.1353 17.0537 18.1353 17.0088 18.1573C16.3781 18.3379 15.7254 18.4278 15.0279 18.4278C11.6729 18.4278 8.97144 16.1755 8.97144 13.3815C8.97144 10.5884 11.6729 8.33525 15.0279 8.33525C18.3819 8.33525 21.0834 10.5884 21.0834 13.3815C21.0834 14.8913 20.273 16.2653 18.9897 17.1893V17.1884ZM15.2836 7.42408C15.1981 7.42124 15.1125 7.41971 15.0269 7.4195C11.2008 7.4195 8.05477 10.0412 8.05477 13.3824C8.05477 13.8903 8.1281 14.3816 8.26377 14.8491H8.18219C7.38126 14.841 6.58487 14.7276 5.81352 14.5118C5.74569 14.4888 5.67785 14.4888 5.61002 14.4888C5.47455 14.4917 5.34229 14.5306 5.22685 14.6016L3.62452 15.5228C3.57869 15.5458 3.53377 15.5687 3.48885 15.5687C3.42343 15.568 3.3609 15.5416 3.31464 15.4954C3.26837 15.4491 3.24207 15.3866 3.24135 15.3212C3.24135 15.2533 3.26335 15.2084 3.28627 15.1406C3.30827 15.1186 3.51177 14.3761 3.62452 13.9269C3.62452 13.8811 3.64652 13.8142 3.64652 13.7693C3.64627 13.6907 3.62786 13.6132 3.59272 13.5429C3.55757 13.4726 3.50665 13.4114 3.44394 13.3641C1.88652 12.2613 0.916687 10.6205 0.916687 8.79817C0.916687 5.44958 4.18919 2.75 8.20419 2.75C11.6554 2.75 14.5567 4.73825 15.2836 7.42317V7.42408ZM10.5591 7.80725C11.0844 7.80725 11.4996 7.37 11.4996 6.86675C11.4996 6.3415 11.0844 5.92625 10.5591 5.92625C10.0339 5.92625 9.6186 6.3415 9.6186 6.86675C9.6186 7.392 10.0339 7.80725 10.5591 7.80725ZM5.73744 7.80725C6.26269 7.80725 6.67885 7.37 6.67885 6.86675C6.67885 6.3415 6.26269 5.92625 5.73744 5.92625C5.2131 5.92625 4.79694 6.3415 4.79694 6.86675C4.79694 7.392 5.2131 7.80725 5.73744 7.80725Z" fill="white"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_320_62">
+                            <rect width="22" height="22" fill="white"/>
+                            </clipPath>
+                            </defs>
+                        </svg>                                                                                                                                                                               
+                        <span class="ms-3 text-white">Feedback</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="flex items-center p-2 text-gray-900 rounded-md hover:bg-[#0D0D0D]">
+                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_335_114)">
+                            <path d="M9.16668 10.0835H1.87918C2.33751 5.45158 6.24618 1.8335 11 1.8335C16.0628 1.8335 20.1667 5.93741 20.1667 11.0002C20.1667 16.0629 16.0628 20.1668 11 20.1668C6.2471 20.1668 2.33843 16.5487 1.87918 11.9168H9.16668V14.6668L13.75 11.0002L9.16668 7.3335V10.0835Z" fill="white"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_335_114">
+                            <rect width="22" height="22" fill="white"/>
+                            </clipPath>
+                            </defs>
+                        </svg>                                                                                                                       
+                        <span class="ms-3 text-white">Log out</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+
+
+    <div class="p-0 sm:ml-64 bg-[#FFFFFF] h-full dark:bg-[#141517]">
+        <div class="top-navigation text-black p-4 md:px-8 pr- flex justify-between items-center">
+            <div class="flex space-x-4">       
+                <div>
+                    <div class="flex items-center text-sm rounded-full" aria-expanded="false" data-dropdown-toggle="dropdown-user">
+                        <img src="../src/assets/profile.png" alt="" class="rounded-full w-10">
+                        <div class="px-3 flex flex-col items-start">
+                            <p class="text-base font-medium dark:text-white">Adminstrator</p>
+                            <p class="text-[#9394A1]">Welcome back to PQuest Hub👋</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button id="theme-toggle" type="button" class="flex text-gray-500 dark:text-gray-400 dark:hover:opacity-55 rounded-lg text-sm p-2.5">
+                <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z">
+                    </path>
+                </svg>
+                <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm -.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd">
+                    </path>
+                </svg>
+            </button>
+        </div>
+        <hr class="dark:opacity-20">
+
+        <div class="w-full h-screen p-4 md:p-8">
+            <h1 class="text-2xl font-semibold tracking-tight mb-4 text-black dark:text-white">Requests</h1>
+            <div class="w-full grid grid-cols-1 md:grid-cols-4 gap-4">
+                <div class="bg-white dark:bg-[#121212] dark:text-white h-fit flex flex-col space-y-4 justify-between rounded-[8px] text-[#09201c] border border-[#0155461a] dark:border-[#ffffff2c] p-4 py-5">
+                    <div class="space-y-2">                                                                                                                                                            
+                        <p class="font-medium">Total Student Requests</p>
+                    </div>
+                    <h1 class="text-2xl font-semibold tracking-tighter md:text-3xl">81</h1>
+                </div>
+
+                <div class="bg-white dark:bg-[#121212] dark:text-white h-fit flex flex-col space-y-4 justify-between rounded-[8px] text-[#09201c] border border-[#0155461a] dark:border-[#ffffff2c] p-4 py-5">
+                    <div class="space-y-2">                                                                                                                                                            
+                        <p class="font-medium">No. of Pending Requests</p>
+                    </div>
+                    <h1 class="text-2xl font-semibold tracking-tighter md:text-3xl">81</h1>
+                </div>
+                
+
+                <div class="bg-white dark:bg-[#121212] dark:text-white h-fit flex flex-col space-y-4 justify-between rounded-[8px] text-[#09201c] border border-[#0155461a] dark:border-[#ffffff2c] p-4 py-5">
+                    <div class="space-y-2">                                                                                                                                                            
+                        <p class="font-medium">No. of Solved Request</p>
+                    </div>
+                    <h1 class="text-2xl font-semibold tracking-tighter md:text-3xl">81</h1>
+                </div>
+            </div>
+
+            <div class="w-full flex flex-col space-y-4 mt-6 md:mt-8 md:space-y-0">
+
+                <div class="flex justify-between items-center py-4">
+                    <h1 class="text-2xl font-semibold tracking-tight text-black dark:text-white">Student Request</h1>
+                </div>
+            
+
+                <div class="relative flex flex-col items-center justify-center overflow-x-auto">
+                    <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+                        <thead class="text-[#9394A1] bg-gray-50 dark:bg-[#121212]">
+                            <tr>
+                                <th scope="col" class="font-normal px-6 py-3">
+                                    #
+                                </th>
+                                <th scope="col" class="font-normal px-6 py-3">
+                                    Full Name
+                                </th>
+                                <th scope="col" class="text-nowrap font-normal px-6 py-3">
+                                    Department
+                                </th>
+                                <th scope="col" class="text-nowrap font-normal px-6 py-3">
+                                    Level
+                                </th>
+                                <th scope="col" class="font-normal px-6 py-3">
+                                    Semester
+                                </th>
+                                <th scope="col" class="font-normal px-6 py-3">
+                                    Session
+                                </th>
+                                <th scope="col" class="font-normal px-6 py-3">
+                                    Status
+                                </th>
+                                <th scope="col" class="font-normal px-6 py-3">
+                                    Action
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="bg-white border-b dark:bg-[#141414] dark:border-[#ffffff2c]">
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    1
+                                </th>
+                                <th scope="row" class="px-6 py-4 font-semibold text-gray-900 whitespace-nowrap dark:text-white">
+                                    Johnson Doemituru
+                                </th>
+                                <td class="px-6 py-4">
+                                    COM SCI
+                                </td>
+                                <td class="px-6 py-4">
+                                    HND II
+                                </td>
+                                <td class="px-6 py-4">
+                                    2nd Semester
+                                </td>
+                                <td class="px-6 py-4">
+                                    2022/2023
+                                </td>
+                                <td class="px-6 py-4">
+                                    <a href="#" class="text-nowrap font-medium bg-[#FFFAEB] p-2 px-4 rounded-full text-[#F6B51E]">
+                                        Pending
+                                    </a>
+                                </td>
+                                <td class="flex space-x-2 px-6 py-4">
+                                    <a href="#" class="w-fit space-x-2 flex items-center text-center bg-[#1463FF] rounded-full p-2 px-4 text-sm leading- text-nowrap text-white font-medium hover:opacity-90">
+                                        <p>Mark as solved</p>
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_336_122)">
+                                            <path d="M7.73469 9.17317L8.67602 10.1145L14.32 4.47051L15.2627 5.41317L8.67602 11.9998L4.43335 7.75717L5.37602 6.81451L6.79269 8.23117L7.73469 9.17251V9.17317ZM7.73602 7.28784L11.0374 3.98584L11.9774 4.92584L8.67602 8.22784L7.73602 7.28784ZM5.85135 11.0578L4.90935 11.9998L0.666687 7.75717L1.60935 6.81451L2.55135 7.75651L2.55069 7.75717L5.85135 11.0578V11.0578Z" fill="white"/>
+                                            </g>
+                                            <defs>
+                                            <clipPath id="clip0_336_122">
+                                            <rect width="16" height="16" fill="white"/>
+                                            </clipPath>
+                                            </defs>
+                                        </svg>                                                                                                                    
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr class="bg-white border-b dark:bg-[#141414] dark:border-[#ffffff2c]">
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    1
+                                </th>
+                                <th scope="row" class="px-6 py-4 font-semibold text-gray-900 whitespace-nowrap dark:text-white">
+                                    Johnson Doemituru
+                                </th>
+                                <td class="px-6 py-4">
+                                    COM SCI
+                                </td>
+                                <td class="px-6 py-4">
+                                    HND II
+                                </td>
+                                <td class="px-6 py-4">
+                                    2nd Semester
+                                </td>
+                                <td class="px-6 py-4">
+                                    2022/2023
+                                </td>
+                                <td class="px-6 py-4">
+                                    <a href="#" class="text-nowrap font-medium bg-[#E0FAEC] p-2 px-4 rounded-full text-[#1FC16B]">
+                                        Solved
+                                    </a>
+                                </td>
+                                <td class="flex space-x-2 px-6 py-4">
+                                    <a href="#" class="w-fit space-x-2 flex items-center text-center bg-[#1463FF] rounded-full p-2 px-4 text-sm leading- text-nowrap text-white font-medium hover:opacity-90">
+                                        <p>Mark as solved</p>
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_336_122)">
+                                            <path d="M7.73469 9.17317L8.67602 10.1145L14.32 4.47051L15.2627 5.41317L8.67602 11.9998L4.43335 7.75717L5.37602 6.81451L6.79269 8.23117L7.73469 9.17251V9.17317ZM7.73602 7.28784L11.0374 3.98584L11.9774 4.92584L8.67602 8.22784L7.73602 7.28784ZM5.85135 11.0578L4.90935 11.9998L0.666687 7.75717L1.60935 6.81451L2.55135 7.75651L2.55069 7.75717L5.85135 11.0578V11.0578Z" fill="white"/>
+                                            </g>
+                                            <defs>
+                                            <clipPath id="clip0_336_122">
+                                            <rect width="16" height="16" fill="white"/>
+                                            </clipPath>
+                                            </defs>
+                                        </svg>                                                                                                                    
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="my-4"></div>
+                    <nav aria-label="Page navigation example">
+                        <ul class="inline-flex font-medium -space-x-px text-sm">
+                          <li>
+                            <a href="#" class="flex items-center justify-center px-3 h-8 ms-0 leading-tight text-gray-500 bg-white border border-e-0 border-gray-300 rounded-s-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-[#121212] dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">Previous</a>
+                          </li>
+                          <li>
+                            <a href="#" class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-[#121212] dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">1</a>
+                          </li>
+                          <li>
+                            <a href="#" class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-[#121212] dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">2</a>
+                          </li>
+                          <li>
+                            <a href="#" aria-current="page" class="flex items-center justify-center px-3 h-8 text-blue-600 border border-gray-300 bg-blue-50 hover:bg-blue-100 hover:text-blue-700 dark:border-gray-700 dark:bg-[#000] dark:text-white">3</a>
+                          </li>
+                          <li>
+                            <a href="#" class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-[#121212] dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">4</a>
+                          </li>
+                          <li>
+                            <a href="#" class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-[#121212] dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">5</a>
+                          </li>
+                          <li>
+                            <a href="#" class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 rounded-e-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-[#121212] dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">Next</a>
+                          </li>
+                        </ul>
+                      </nav>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="/src/darkmode.js"></script>
+</body>
+</html>
