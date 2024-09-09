@@ -1315,6 +1315,10 @@ video {
   padding: 1.5rem;
 }
 
+.p-1{
+  padding: 0.25rem;
+}
+
 .px-0{
   padding-left: 0px;
   padding-right: 0px;
@@ -2009,6 +2013,10 @@ body{
     padding: 2rem;
   }
 
+  .md\:p-2\.5{
+    padding: 0.625rem;
+  }
+
   .md\:px-12{
     padding-left: 3rem;
     padding-right: 3rem;
@@ -2032,6 +2040,11 @@ body{
   .md\:py-6{
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
+  }
+
+  .md\:px-5{
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
   }
 
   .md\:pt-6{
